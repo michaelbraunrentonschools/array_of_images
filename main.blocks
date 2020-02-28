@@ -1,0 +1,37 @@
+<xml xmlns="https://developers.google.com/blockly/xml"><variables><variable type="KIND_SpriteKind" id="Kd^,b18(c_$GHupQfFH7">Player</variable><variable type="KIND_SpriteKind" id="KFdm_4^JwSsy,%Xq4IsY">Projectile</variable><variable type="KIND_SpriteKind" id="iQgZ%az4fLYMKk5j(LIy">Food</variable><variable type="KIND_SpriteKind" id="|Adqh3fZu)(|L[W(t8*%">Enemy</variable><variable id="_JgCYveUo*lQQ(-Rm1+b">character_Images</variable><variable id="92N1]aI2)l4oHoUb`U)k">list</variable><variable id="Pfuw~WdQK/}f!+#=d(Y.">duck</variable><variable id="ZF//v3dQ(T]G(n%,xuwF">mySprite</variable><variable id="0h|N}{b(/HREtSqV25Z7">count</variable></variables><block type="pxt-on-start" x="50" y="-50"><comment id="undefined" pinned="true" h="197.60790252685547" w="433.6925048828125">Create an animation using the image library.
+
+Get a minimum of 6 frames of images</comment><statement name="HANDLER"><block type="variables_set"><field name="VAR" id="92N1]aI2)l4oHoUb`U)k">list</field><value name="VALUE"><block type="lists_create_with"><mutation items="3"/><value name="ADD0"><shadow type="math_number"><field name="NUM">1</field></shadow><block type="image_picker"><field name="image">sprites.duck.duck1</field></block></value><value name="ADD1"><shadow type="math_number"><field name="NUM">2</field></shadow><block type="image_picker"><field name="image">sprites.duck.duck2</field></block></value><value name="ADD2"><shadow type="math_number"><field name="NUM">3</field></shadow><block type="image_picker"><field name="image">sprites.duck.duckHurt</field></block></value></block></value><next><block type="variables_set"><field name="VAR" id="Pfuw~WdQK/}f!+#=d(Y.">duck</field><value name="VALUE"><shadow xmlns="http://www.w3.org/1999/xhtml" type="math_number"><field name="NUM">0</field></shadow><block type="spritescreate"><value name="img"><shadow type="screen_image_picker"><field name="img">img`
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+`</field></shadow><block type="lists_index_get"><value name="LIST"><block type="variables_get"><field name="VAR" id="92N1]aI2)l4oHoUb`U)k">list</field></block></value><value name="INDEX"><shadow type="math_number"><field name="NUM">0</field></shadow></value></block></value><value name="kind"><shadow type="spritekind"><field name="MEMBER">Player</field></shadow></value></block></value></block></next></block></statement></block><block type="gameinterval" x="30" y="250"><value name="period"><shadow type="timePicker"><field name="ms">200</field></shadow></value><statement name="HANDLER"><block type="spritesetimage"><value name="sprite"><block type="variables_get"><field name="VAR" id="Pfuw~WdQK/}f!+#=d(Y.">duck</field></block></value><value name="img"><shadow type="screen_image_picker"><field name="img">img`
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+`</field></shadow><block type="lists_index_get"><value name="LIST"><block type="variables_get"><field name="VAR" id="92N1]aI2)l4oHoUb`U)k">list</field></block></value><value name="INDEX"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="math_modulo"><value name="DIVIDEND"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="variables_get"><field name="VAR" id="0h|N}{b(/HREtSqV25Z7">count</field></block></value><value name="DIVISOR"><shadow type="math_number"><field name="NUM">1</field></shadow><block type="lists_length"><value name="VALUE"><block type="variables_get"><field name="VAR" id="92N1]aI2)l4oHoUb`U)k">list</field></block></value></block></value></block></value></block></value><next><block type="variables_change"><field name="VAR" id="0h|N}{b(/HREtSqV25Z7">count</field><value name="VALUE"><shadow type="math_number"><field name="NUM">1</field></shadow></value></block></next></block></statement></block></xml>
